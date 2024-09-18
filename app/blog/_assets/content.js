@@ -104,7 +104,7 @@ export const authors = [
     // The slug to use in the URL, from the authorSlugs object above.
     slug: authorSlugs.marc,
     // The name to display in the author's bio. Up to 60 characters.
-    name: "Marc Lou",
+    name: "Nate Loeffel",
     // The job to display in the author's bio. Up to 60 characters.
     job: "Maker of ByeDispute",
     // The description of the author to display in the author's bio. Up to 160 characters.
@@ -117,7 +117,7 @@ export const authors = [
       {
         name: socialIcons.twitter.name,
         icon: socialIcons.twitter.svg,
-        url: "https://twitter.com/marc_louvion",
+        url: "https://twitter.com/nateloeffel",
       },
       {
         name: socialIcons.linkedin.name,

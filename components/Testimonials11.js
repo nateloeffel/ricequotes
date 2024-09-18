@@ -51,13 +51,13 @@ const list = [
     // Optional, use for social media like Twitter. Does not link anywhere but cool to display
     username: "marclou",
     // REQUIRED
-    name: "Marc Lou",
+    name: "Nate Loeffel",
     // REQUIRED
     text: "Really easy to use. The tutorials are really useful and explains how everything works. Hope to ship my next project really fast!",
     // REQUIRED — use refTypes.other if you don't want to display an icon
     type: refTypes.twitter,
     // Optional, link to the person's testimonial. It's more trustable
-    link: "https://twitter.com/marc_louvion",
+    link: "https://twitter.com/nateloeffel",
     // Optional, a statically imported image (usually from your public folder—recommended) or a link to the person's avatar. Shows a fallback letter if not provided
     img: "https://pbs.twimg.com/profile_images/1514863683574599681/9k7PqDTA_400x400.jpg",
     // You can display video testimonials to build more trust. Just swap the type above to "video" and add at least the video source below
@@ -102,7 +102,7 @@ const list = [
     type: refTypes.other,
   },
   {
-    name: "Marc Lou",
+    name: "Nate Loeffel",
     text: "The tool is exactly what I didn't even know I needed.",
     videoPoster: "https://d1wkquwg5s1b04.cloudfront.net/demo/marcPoster.jpg",
     videoSrc: "https://d1wkquwg5s1b04.cloudfront.net/demo/marcVideo.mp4",
