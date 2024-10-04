@@ -7,16 +7,16 @@ import Modal from "@/components/Modal";
 
 const quotes = [
 	{
-		quote: "The only limit to our realization of tomorrow is our doubts of today.",
-		date: "September 8th, 2024",
+		quote: "im looking like a freaking wet rat!",
+		date: "September 13th, 2024",
 	},
 	{
-		quote: "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-		date: "September 9th, 2024",
+		quote: "i love people watching",
+		date: "September 21st, 2024",
 	},
 	{
-		quote: "Life is 10% what happens to us and 90% how we react to it.",
-		date: "September 10th, 2024",
+		quote: "I can't do english today - I think I'm trilingual",
+		date: "September 29th, 2024",
 	},
 ];
 
