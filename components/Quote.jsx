@@ -15,7 +15,7 @@ const Quote = ({ quote, date }) => {
 				</div>
 				<div className="flex justify-center items-center mt-1">
 					<div>
-						<p className="font-semibold text-sm"> Rice Person - {date}</p>
+						<p className="font-semibold text-sm"> Rhys Kopecky - {date}</p>
 					</div>
 				</div>
 			</div>

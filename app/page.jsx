@@ -36,7 +36,7 @@ export default function Home() {
 	const day = today.getDate();
 	const month = today.getMonth() + 1;
 	let modalOpened = false;
-	if (day === 18 && month === 10) {
+	if (day === 6 && month === 10) {
 		modalOpened = true
 	}
 
