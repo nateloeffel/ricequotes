@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 const Quote = ({ quote, date }) => {
+
 	return (
 		<section className="bg-base-100 w-full h-full flex items-center justify-center flex-col">
 			<div className="flex items-center justify-center mt-8">

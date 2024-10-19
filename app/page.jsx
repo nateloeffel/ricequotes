@@ -1,17 +1,47 @@
-import { Suspense } from "react";
+"use client"
+import { Suspense, useState } from "react";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Problem from "@/components/Problem";
-import FeaturesAccordion from "@/components/FeaturesAccordion";
-import Pricing from "@/components/Pricing";
-import FAQ from "@/components/FAQ";
-import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
 import Quote from "@/components/Quote";
+import Modal from "@/components/Modal";
+
+
+const quotes = [
+	{
+		quote: "The only limit to our realization of tomorrow is our doubts of today.",
+		date: "September 8th, 2024",
+	},
+	{
+		quote: "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+		date: "September 9th, 2024",
+	},
+	{
+		quote: "Life is 10% what happens to us and 90% how we react to it.",
+		date: "September 10th, 2024",
+	},
+];
+
+function getQuoteForToday() {
+	const today = new Date();
+	const dayOfYear = Math.floor(
+		(today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24
+	);
+	const quoteIndex = dayOfYear % quotes.length;
+	return quotes[quoteIndex];
+}
+
 
 export default function Home() {
-	// Example Quote: "I don't know what to put here but it should be funny."
-	// Example Date: "2022-01-01"
+	// if date is october 18th, show modal
+	const today = new Date();
+	const day = today.getDate();
+	const month = today.getMonth() + 1;
+	let modalOpened = false;
+	if (day === 18 && month === 10) {
+		modalOpened = true
+	}
+
+	const [isModalOpen, setIsModalOpen] = useState(modalOpened);
+	const todaysQuote = getQuoteForToday();
 
 	return (
 		<>
@@ -19,11 +49,9 @@ export default function Home() {
 				<Header />
 			</Suspense>
 			<main className="w-full h-3/5 pt-64">
+				<Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
 				<div className="h-full w-full flex items-center justify-center">
-					<Quote
-						quote="I don't know what to put here but it should be funny."
-						date="September 8th, 2024"
-					/>
+					<Quote quote={todaysQuote.quote} date={todaysQuote.date} />
 				</div>
 			</main>
 		</>
